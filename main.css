@@ -1,0 +1,97 @@
+/* Define CSS Variables */
+:root {
+    --dl-color-gray-500: #ec4f4f;
+    --dl-color-gray-700: #999999;
+    --dl-color-gray-900: #D9D9D9;
+    --dl-color-gray-black: #000000;
+    --dl-color-gray-white: #FFFFFF;
+    --dl-color-primary-100: #003EB3;
+    --dl-color-primary-300: #0074F0;
+    --dl-color-primary-500: #14A9FF;
+    --dl-color-primary-700: #85DCFF;
+  }
+  
+  /* Styles */
+  body {
+    font-family: Karla, sans-serif; /* provided by google fonts */
+    font-size: 16px;
+    background-color: var(--dl-color-gray-white);
+    color: var(--dl-color-gray-black);
+    margin: 0;
+    padding: 0;
+  }
+  /* For Header */
+  header {
+    background-color: rgb(57, 110, 93); /* box colour */
+    color:#FFFFFF; /*header text colour*/
+    padding: 1rem; /*space inside the box, using rem as a unit to adapt to user's broswer preferences */
+    text-align: center; /* text is centered */
+  }
+  /* navigation panel centered */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  /* margin for dot points */
+  nav ul li {
+    margin: 0 1rem;
+  }
+  /* for navigation links */
+  .navLink {
+    color: #0074F0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  /* footer */
+  footer {
+    background-color: #232323; /* footer background*/
+    color:#FFFFFF; /* footer text white */
+    text-align: center; /* centered text*/
+    padding: 1rem; /* space inside the box */
+    position: relative; /*footer appears at the bottom of the page*/
+    width: 100%;
+    bottom: 0;
+  }
+  
+ /* Container for the text and image */
+.text-image-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers items */
+    gap: 1rem; /* Adds space between the text and the image */
+  }
+  
+  /* Styles for the text content */
+  .text-content {
+    flex: 1; /* Allows text content to take up remaining space */
+  }
+  
+  /* Container for the image */
+  .image-container {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 150px; /* Adjust the width of the image container */
+  }
+  
+  /* Styles for the image */
+  .image-container img {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+
+  /* Container for the video */
+.video-container {
+    flex-shrink: 0; /* Prevents the video container from shrinking */
+    width: 320px; /* Adjust the width of the video container */
+  }
+  
+  /* Styles for the video*/
+  .video-container iframe {
+    width: 100%; /* Ensures the iframe fits within its container */
+    height: 180px; /* Adjust the height of the video */
+    border-radius: 8px; /*Adds rounded corners */
+  }
+  
+  
